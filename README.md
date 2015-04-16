@@ -1,6 +1,6 @@
 # request-fork
 
-Takes a single request and forks it out to multiple hosts.
+Take a single request and send it to multiple hosts.
 
 ### Install
 
@@ -12,21 +12,23 @@ npm install request-fork
 
 ```js
 var req = {
-  url: 'https://api.github.com/repos/request/request',
+  url: 'https://mockbin.com/status/502',
   headers: {
-    'User-Agent': 'request'
+    'User-Agent': 'request-fork'
   }
 }
 
 var targets = [
-  "http://mockbin.com/bin/8bbc56c6-eeb3-4d3e-b916-5a41a1e170ca",
-  "http://mockbin.com/bin/356aaac4-2db1-4fb6-9e37-a44780f9f0d3"
+  "https://mockbin.com/status/200",
+  "https://mockbin.com/status/404"
 ]
 
 requestFork(req, targets, function(responses, errors) {
-	if (errors) console.log(errors)
-	console.log(responses)
-}
+  if (errors) throw errors
+  responses.map(function(res){
+    console.log(res.statusCode)
+  })
+})
 ```
 
 ### Contributing

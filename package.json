@@ -1,7 +1,7 @@
 {
   "name": "request-fork",
   "version": "0.1.0",
-  "description": "Takes a single request and forks it out to multiple hosts",
+  "description": "Take a single request and send it to multiple hosts",
   "main": "lib/request-fork.js",
   "directories": {
     "test": "test"
@@ -21,5 +21,8 @@
   "devDependencies": {
     "mocha": "^2.2.4",
     "nock": "^1.6.0"
+  },
+  "dependencies": {
+    "unirest": "^0.4.0"
   }
 }
