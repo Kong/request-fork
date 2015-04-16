@@ -23,7 +23,10 @@ var targets = [
   "http://mockbin.com/bin/356aaac4-2db1-4fb6-9e37-a44780f9f0d3"
 ]
 
-requestFork(req, targets)
+requestFork(req, targets, function(responses, errors) {
+	if (errors) console.log(errors)
+	console.log(responses)
+}
 ```
 
 ### Contributing
