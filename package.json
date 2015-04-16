@@ -1,0 +1,24 @@
+{
+  "name": "request-fork",
+  "version": "0.1.0",
+  "description": "Takes a single request and forks it out to multiple hosts",
+  "main": "lib/request-fork.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha "
+  },
+  "keywords": [
+    "http",
+    "request",
+    "fork",
+    "multiple",
+    "api"
+  ],
+  "author": "Montana Flynn",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^2.2.4"
+  }
+}
