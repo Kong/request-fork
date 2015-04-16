@@ -1,6 +1,6 @@
 {
   "name": "request-fork",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Take a single request and send it to multiple hosts",
   "main": "lib/request-fork.js",
   "directories": {
