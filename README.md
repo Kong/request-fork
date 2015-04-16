@@ -1,4 +1,4 @@
-# request-fork
+# request-fork ![](https://img.shields.io/wercker/ci/552f51d259f9ea486f001bd0.svg) ![](https://img.shields.io/npm/l/request-fork.svg)
 
 Take a single request and send it to multiple hosts.
 
