@@ -35,4 +35,11 @@ describe('requestFork', function(){
       done()
     })
   })
+  it('should return any errors', function(done){
+    targets.push("http://ifsdjsljadflajkjkldf.ewrkjw")
+    requestFork(req, targets, function(responses, errors) {
+      assert.equal(errors.length, 1)
+      done()
+    })
+  })
 })

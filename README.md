@@ -1,6 +1,6 @@
-# request-fork ![](https://img.shields.io/wercker/ci/552f51d259f9ea486f001bd0.svg) ![](https://img.shields.io/npm/l/request-fork.svg)
+# request-fork [![](https://img.shields.io/wercker/ci/552f51d259f9ea486f001bd0.svg)](https://app.wercker.com/#applications/552f51d259f9ea486f001bd0) [![](https://img.shields.io/npm/l/request-fork.svg)](https://www.npmjs.com/package/request-fork)
 
-Take a single request and send it to multiple hosts.
+Take a single [request object](https://github.com/request/request#requestoptions-callback) and send it to multiple targets. 
 
 ### Install
 
@@ -11,7 +11,10 @@ npm install request-fork
 ### Usage
 
 ```js
+var requestFork = require('request-fork')
+
 var req = {
+  method: 'GET',
   url: 'https://mockbin.com/status/502',
   headers: {
     'User-Agent': 'request-fork'
