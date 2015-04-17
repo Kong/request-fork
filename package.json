@@ -1,6 +1,6 @@
 {
   "name": "request-fork",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Take a single request and send it to multiple targets",
   "main": "lib/request-fork.js",
   "directories": {
