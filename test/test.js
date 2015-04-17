@@ -42,4 +42,11 @@ describe('requestFork', function(){
       done()
     })
   })
+  it('should work without a url in the req object', function(done){
+    delete req.url
+    requestFork(req, targets, function(responses, errors) {
+      assert.equal(responses.length, 4)
+      done()
+    })
+  })
 })
